@@ -190,3 +190,31 @@ QA note: Logo phase uses Claude visual review only. The critical risk on flat si
 - Grok vision QA × 1 ≈ $0.02
 
 **15 keeper images + 2 archived rejects. Well under the $5 campaign cap.**
+
+---
+
+## Phase 5 — Dedicated Hero (replacing the busy cruise-scene hero)
+
+Zack flagged the original hero (`scene-2-cruising.jpg`) as too busy/centered with the headline landing on the subject's face. Forged purpose-built heroes with deliberate negative space for the headline.
+
+### #16 — hero-a-goldenhour-clean.jpg (NB Pro gen → NB Pro edit) ⭐ LIVE HERO
+![hero-a-goldenhour-clean.jpg](images/hero-a-goldenhour-clean.jpg)
+- **Timestamp**: 2026-05-28
+- **Attempt 1 (gen)**: NB Pro @ 2K — $0.134 — `hero-a-goldenhour.jpg`. Editorial wide desert shot, subject right-third, big sky negative space. Flaw: NB stamped "DIVA CAB" on the car door.
+- **Attempt 2 (edit)**: NB Pro edit @ 2K — $0.134 — "Remove the small logo and text on the car door..." → clean door, composition preserved.
+- **Slot**: Landing-page hero (also re-cropped to the 1200×630 OG image)
+- **Claude Review**: Use Case 10/10 | Prompt Accuracy 10/10
+- **Status**: ✓ LIVE — wired into index.html hero, bottom-aligned poster layout, object-position 68% for mobile crop
+
+### #17 — hero-b-neonnight.jpg (NB Pro, alternate)
+![hero-b-neonnight.jpg](images/hero-b-neonnight.jpg)
+- **Timestamp**: 2026-05-28 | **Tier**: 2 | **API**: NB Pro @ 2K | **Cost**: $0.134
+- **Slot**: Alternate hero — neon-night ballgown by the SUV
+- **Claude Review**: Use Case 9/10 | Prompt Accuracy 9/10
+- **Status**: ◐ Bench — strong alternate; background neon signs are generic street set-dressing. Available if Zack prefers the night mood.
+
+## Phase 5 Cost (Hero): $0.402 — NB Pro × 3 (gen A + edit A + gen B)
+
+---
+
+## REVISED RUNNING TOTAL: ~$2.08 / $5.00 cap

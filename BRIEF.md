@@ -31,7 +31,7 @@ This was built in **IMAGE FORGE MODE** (branding proof of concept) and extended 
 All images generated via the tier pipeline (Grok Tier 1 for photoreal scenes; Gemini Nano Banana Pro for all text-bearing logos/collateral/vehicles; one NB2 escalation on scene 4). **Total spend ~$1.68** of a $5 campaign cap.
 
 ## Share Preview
-- **OG image source**: `scene-2-cruising.jpg` (convertible cruise hero) cropped to 1200×630.
+- **OG image source**: `hero-a-goldenhour-clean.jpg` (dedicated editorial desert hero) cropped to 1200×630.
 - **OG title**: "Mrs. DoubtHire — Palm Springs' Fabulous Drag Taxi"
 - **OG description**: "Bachelorettes, bar crawls, drag bingo & showgirl cruises — chauffeured in heels through Palm Springs."
 - **Favicon source**: lips-lashes badge (`logo-2`), scaled to 512×512.
