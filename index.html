@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mrs. DoubtHire — Palm Springs' Fabulous Drag Taxi</title>
+<meta name="description" content="Palm Springs' fabulous drag-queen luxury taxi. Bachelorettes, bar crawls, drag bingo & showgirl cruises — chauffeured in heels.">
+
+<!-- Open Graph / iMessage / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Mrs. DoubtHire">
+<meta property="og:title" content="Mrs. DoubtHire — Palm Springs' Fabulous Drag Taxi">
+<meta property="og:description" content="Bachelorettes, bar crawls, drag bingo & showgirl cruises — chauffeured in heels through Palm Springs.">
+<meta property="og:url" content="https://banana-daddy.github.io/mrs-doubthire/">
+<meta property="og:image" content="https://banana-daddy.github.io/mrs-doubthire/images/og.jpg">
+<meta property="og:image:secure_url" content="https://banana-daddy.github.io/mrs-doubthire/images/og.jpg">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="A teal-wigged drag queen drives a vintage convertible full of a cheering bachelorette party through Palm Springs at sunset.">
+<meta property="og:locale" content="en_US">
+
+<!-- Twitter / X -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Mrs. DoubtHire — Palm Springs' Fabulous Drag Taxi">
+<meta name="twitter:description" content="Bachelorettes, bar crawls, drag bingo & showgirl cruises — chauffeured in heels through Palm Springs.">
+<meta name="twitter:image" content="https://banana-daddy.github.io/mrs-doubthire/images/og.jpg">
+<meta name="twitter:image:alt" content="A teal-wigged drag queen drives a vintage convertible full of a cheering bachelorette party through Palm Springs at sunset.">
+
+<!-- Theme + favicon + canonical -->
+<meta name="theme-color" content="#0B0A0C">
+<link rel="icon" type="image/png" href="images/favicon.png">
+<link rel="apple-touch-icon" sizes="512x512" href="images/favicon-512.png">
+<link rel="canonical" href="https://banana-daddy.github.io/mrs-doubthire/">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;400;500;600;700&family=Sacramento&display=swap" rel="stylesheet">
+
+<style>
+  :root{
+    --ink:#0B0A0C; --pink:#FF2E93; --pink-bright:#FF5FB0;
+    --gold:#E7B24C; --teal:#25D8C8; --cream:#FAF1E4;
+  }
+  *{ -webkit-tap-highlight-color: transparent; }
+  body{ font-family:'Poppins',sans-serif; background:var(--ink); color:var(--cream); overflow-x:hidden; }
+  .font-display{ font-family:'Bebas Neue',sans-serif; letter-spacing:.02em; }
+  .font-script{ font-family:'Sacramento',cursive; }
+
+  .neon-pink{ color:var(--pink-bright);
+    text-shadow:0 0 6px rgba(255,46,147,.8),0 0 18px rgba(255,46,147,.6),0 0 40px rgba(255,46,147,.35); }
+  .neon-teal{ color:var(--teal);
+    text-shadow:0 0 6px rgba(37,216,200,.8),0 0 18px rgba(37,216,200,.55),0 0 40px rgba(37,216,200,.3); }
+  .gold-grad{ background:linear-gradient(180deg,#F6D88B 0%,var(--gold) 55%,#B07F2C 100%);
+    -webkit-background-clip:text; background-clip:text; color:transparent; }
+
+  /* checker divider */
+  .checker{ height:18px; width:100%;
+    background:
+      repeating-conic-gradient(var(--pink) 0% 25%, #111 0% 50%) 0 0 / 36px 36px; }
+
+  /* scrolling marquee */
+  .marquee{ display:flex; gap:0; white-space:nowrap; animation:scroll 26s linear infinite; }
+  @keyframes scroll{ from{ transform:translateX(0);} to{ transform:translateX(-50%);} }
+  .marquee span{ padding:0 1.25rem; }
+
+  /* reveal on scroll */
+  .reveal{ opacity:0; transform:translateY(28px); transition:opacity .7s ease, transform .7s ease; }
+  .reveal.in{ opacity:1; transform:none; }
+
+  .glass{ background:rgba(255,255,255,.04); border:1px solid rgba(255,255,255,.09);
+    backdrop-filter:blur(8px); -webkit-backdrop-filter:blur(8px); }
+
+  .btn-pink{ background:var(--pink); color:#fff; box-shadow:0 0 24px rgba(255,46,147,.45);
+    transition:transform .2s ease, box-shadow .2s ease; }
+  .btn-pink:hover{ transform:translateY(-2px); box-shadow:0 0 34px rgba(255,46,147,.7); }
+  .btn-ghost{ border:1px solid var(--gold); color:var(--gold); transition:background .2s ease,color .2s ease; }
+  .btn-ghost:hover{ background:var(--gold); color:var(--ink); }
+
+  .card-zoom img{ transition:transform .6s ease; }
+  .card-zoom:hover img{ transform:scale(1.06); }
+
+  a.nav-link{ transition:color .2s ease; }
+  a.nav-link:hover{ color:var(--pink-bright); }
+  html{ scroll-behavior:smooth; }
+</style>
+</head>
+<body>
+
+<!-- NAV -->
+<header class="fixed top-0 inset-x-0 z-50 transition-all duration-300" id="nav">
+  <div class="max-w-6xl mx-auto px-5 py-3 flex items-center justify-between">
+    <a href="#top" class="flex items-center gap-2">
+      <img src="images/favicon-512.png" alt="Mrs. DoubtHire badge" class="w-9 h-9 rounded-full ring-1 ring-[var(--gold)]/60">
+      <span class="font-script text-2xl text-[var(--pink-bright)] leading-none">Mrs. DoubtHire</span>
+    </a>
+    <nav class="hidden md:flex items-center gap-7 text-sm uppercase tracking-widest">
+      <a href="#fleet" class="nav-link">Fleet</a>
+      <a href="#night" class="nav-link">The Night</a>
+      <a href="#packages" class="nav-link">Packages</a>
+      <a href="#book" class="nav-link">Book</a>
+    </nav>
+    <a href="#book" class="btn-pink text-xs md:text-sm font-semibold uppercase tracking-widest px-4 py-2 rounded-full">Book Your Night</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section id="top" class="relative min-h-[100svh] flex items-center justify-center text-center overflow-hidden">
+  <img src="images/scene-2-cruising.jpg" alt="Drag queen driving a vintage convertible full of a bachelorette party through Palm Springs at sunset" class="absolute inset-0 w-full h-full object-cover">
+  <div class="absolute inset-0" style="background:linear-gradient(180deg,rgba(11,10,12,.55) 0%,rgba(11,10,12,.35) 40%,rgba(11,10,12,.92) 100%);"></div>
+  <div class="relative z-10 px-5 max-w-3xl pt-20">
+    <p class="font-script text-4xl sm:text-5xl text-[var(--pink-bright)] mb-1" style="text-shadow:0 0 18px rgba(255,46,147,.5)">Mrs. DoubtHire</p>
+    <h1 class="font-display text-7xl sm:text-8xl md:text-9xl leading-[.85]">
+      <span class="neon-pink">HIRE</span> <span class="neon-teal">THE</span> <span class="neon-pink">MRS.</span>
+    </h1>
+    <p class="mt-5 text-base sm:text-lg text-cream/90 max-w-xl mx-auto font-light">
+      Palm Springs' fabulous drag-queen luxury taxi. Bachelorettes, bar crawls, drag bingo
+      & showgirl cruises — chauffeured in heels, start to finish.
+    </p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="#book" class="btn-pink font-semibold uppercase tracking-widest px-7 py-3.5 rounded-full">Book Your Night</a>
+      <a href="#packages" class="btn-ghost font-semibold uppercase tracking-widest px-7 py-3.5 rounded-full">See Packages</a>
+    </div>
+  </div>
+  <div class="absolute bottom-5 left-1/2 -translate-x-1/2 z-10 text-[var(--gold)] text-xs tracking-[.3em] uppercase animate-pulse">Scroll</div>
+</section>
+
+<!-- MARQUEE -->
+<div class="bg-[var(--pink)] text-white py-3 font-display text-2xl sm:text-3xl uppercase overflow-hidden">
+  <div class="marquee">
+    <span>Bachelorette Takeovers ✦</span><span>Bar Crawls ✦</span><span>Drag Bingo Nights ✦</span><span>Showgirl Hour ✦</span><span>Birthdays ✦</span><span>Pride ✦</span>
+    <span>Bachelorette Takeovers ✦</span><span>Bar Crawls ✦</span><span>Drag Bingo Nights ✦</span><span>Showgirl Hour ✦</span><span>Birthdays ✦</span><span>Pride ✦</span>
+  </div>
+</div>
+
+<!-- INTRO -->
+<section class="max-w-4xl mx-auto px-5 py-20 sm:py-28 text-center reveal">
+  <h2 class="font-display text-5xl sm:text-6xl mb-5">Your driver <span class="gold-grad">is the entertainment.</span></h2>
+  <p class="text-cream/80 text-lg font-light leading-relaxed">
+    Anyone can call a rideshare. Only Mrs. DoubtHire sends a 6-foot showgirl in sequins to sweep
+    your crew across the desert. From the first champagne pour in the driveway to the last neon-lit
+    curb call, the ride <em class="text-[var(--pink-bright)] not-italic">is</em> the party.
+  </p>
+</section>
+
+<div class="checker"></div>
+
+<!-- FLEET -->
+<section id="fleet" class="max-w-6xl mx-auto px-5 py-20 sm:py-28">
+  <div class="text-center mb-14 reveal">
+    <p class="uppercase tracking-[.35em] text-[var(--teal)] text-xs mb-3">The Fleet</p>
+    <h2 class="font-display text-5xl sm:text-7xl">Pick Your Chariot</h2>
+  </div>
+  <div class="grid md:grid-cols-3 gap-6">
+    <div class="card-zoom glass rounded-2xl overflow-hidden reveal">
+      <div class="overflow-hidden"><img src="images/vehicle-1-van-pink.jpg" alt="Black Mrs. DoubtHire party van with pink branding" class="w-full aspect-video object-cover"></div>
+      <div class="p-5">
+        <h3 class="font-display text-3xl text-[var(--pink-bright)]">The Sashay Sprinter</h3>
+        <p class="text-cream/70 text-sm mt-1">Up to 12 queens. The bachelorette workhorse — LED interior, bubbles on ice, room to dance.</p>
+      </div>
+    </div>
+    <div class="card-zoom glass rounded-2xl overflow-hidden reveal">
+      <div class="overflow-hidden"><img src="images/vehicle-2-convertible-coral.jpg" alt="Vintage cream and coral convertible with Mrs. DoubtHire branding" class="w-full aspect-video object-cover"></div>
+      <div class="p-5">
+        <h3 class="font-display text-3xl gold-grad">The Showgirl '59</h3>
+        <p class="text-cream/70 text-sm mt-1">Top-down vintage glamour. Built for golden-hour photos and main-character energy.</p>
+      </div>
+    </div>
+    <div class="card-zoom glass rounded-2xl overflow-hidden reveal">
+      <div class="overflow-hidden"><img src="images/vehicle-3-suv-neon.jpg" alt="Blacked-out SUV with neon Mrs. DoubtHire branding at night" class="w-full aspect-video object-cover"></div>
+      <div class="p-5">
+        <h3 class="font-display text-3xl neon-teal">The After Dark</h3>
+        <p class="text-cream/70 text-sm mt-1">Blacked-out, neon-lit, underglow blazing. The way to roll up to the club.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="checker"></div>
+
+<!-- THE NIGHT -->
+<section id="night" class="max-w-6xl mx-auto px-5 py-20 sm:py-28">
+  <div class="text-center mb-14 reveal">
+    <p class="uppercase tracking-[.35em] text-[var(--teal)] text-xs mb-3">How The Night Goes</p>
+    <h2 class="font-display text-5xl sm:text-7xl">Four Phases, <span class="neon-pink">One Legend</span></h2>
+  </div>
+  <div class="space-y-10 sm:space-y-16">
+    <div class="grid sm:grid-cols-2 gap-6 items-center reveal">
+      <div class="card-zoom rounded-2xl overflow-hidden"><img src="images/scene-1-pickup.jpg" alt="Drag queen greeting a bachelorette party at a Palm Springs house" class="w-full aspect-video object-cover"></div>
+      <div><span class="font-display text-6xl gold-grad">01</span><h3 class="font-display text-4xl -mt-2">The Pickup</h3><p class="text-cream/75 font-light mt-2">Golden hour. She arrives at your door, arms wide, champagne ready. The neighbors are already jealous.</p></div>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6 items-center reveal">
+      <div class="card-zoom rounded-2xl overflow-hidden sm:order-2"><img src="images/scene-2-cruising.jpg" alt="Bachelorette party cruising in a convertible at sunset" class="w-full aspect-video object-cover"></div>
+      <div class="sm:order-1 sm:text-right"><span class="font-display text-6xl gold-grad">02</span><h3 class="font-display text-4xl -mt-2">The Cruise</h3><p class="text-cream/75 font-light mt-2">Top down, boas up, mountains glowing. The desert wind does your hair and her one-liners do the rest.</p></div>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6 items-center reveal">
+      <div class="card-zoom rounded-2xl overflow-hidden"><img src="images/scene-3-club-arrival.jpg" alt="Drag queen escorting a bride from an SUV outside a neon nightclub" class="w-full aspect-video object-cover"></div>
+      <div><span class="font-display text-6xl gold-grad">03</span><h3 class="font-display text-4xl -mt-2">The Arrival</h3><p class="text-cream/75 font-light mt-2">She escorts you to the front of the line, under the neon, like the VIPs you are. No waiting. Ever.</p></div>
+    </div>
+    <div class="grid sm:grid-cols-2 gap-6 items-center reveal">
+      <div class="card-zoom rounded-2xl overflow-hidden sm:order-2"><img src="images/scene-4-afterparty.jpg" alt="Bachelorette party toasting champagne inside the party van" class="w-full aspect-video object-cover"></div>
+      <div class="sm:order-1 sm:text-right"><span class="font-display text-6xl gold-grad">04</span><h3 class="font-display text-4xl -mt-2">The After</h3><p class="text-cream/75 font-light mt-2">Disco ball spinning, confetti flying, everyone home safe. The story you'll tell for years.</p></div>
+    </div>
+  </div>
+</section>
+
+<div class="checker"></div>
+
+<!-- PACKAGES -->
+<section id="packages" class="max-w-6xl mx-auto px-5 py-20 sm:py-28">
+  <div class="text-center mb-14 reveal">
+    <p class="uppercase tracking-[.35em] text-[var(--teal)] text-xs mb-3">The Menu</p>
+    <h2 class="font-display text-5xl sm:text-7xl">Pick Your <span class="gold-grad">Package</span></h2>
+    <p class="text-cream/60 text-sm mt-3">Sample pricing — every night is customized to your crew.</p>
+  </div>
+  <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5">
+    <div class="glass rounded-2xl p-6 reveal flex flex-col">
+      <h3 class="font-display text-3xl text-[var(--pink-bright)]">The Bachelorette</h3>
+      <p class="text-cream/70 text-sm mt-2 flex-1">4-hour glam takeover with your queen host, bubbles & a photo stop. The signature.</p>
+      <p class="font-display text-5xl gold-grad mt-4">$399</p>
+    </div>
+    <div class="glass rounded-2xl p-6 reveal flex flex-col">
+      <h3 class="font-display text-3xl text-[var(--pink-bright)]">Bar Crawl</h3>
+      <p class="text-cream/70 text-sm mt-2 flex-1">Hop the Arenas District in style — door-to-door across the best gay bars in town.</p>
+      <p class="font-display text-5xl gold-grad mt-4">$299</p>
+    </div>
+    <div class="glass rounded-2xl p-6 reveal flex flex-col">
+      <h3 class="font-display text-3xl text-[var(--pink-bright)]">Drag Bingo Night</h3>
+      <p class="text-cream/70 text-sm mt-2 flex-1">Round-trip chauffeur to the show and back. B-I-N-G-O, hunty.</p>
+      <p class="font-display text-5xl gold-grad mt-4">$89</p>
+    </div>
+    <div class="glass rounded-2xl p-6 reveal flex flex-col">
+      <h3 class="font-display text-3xl text-[var(--pink-bright)]">Showgirl Hour</h3>
+      <p class="text-cream/70 text-sm mt-2 flex-1">A photo-ready desert cruise in the vintage convertible. Main-character energy, bottled.</p>
+      <p class="font-display text-5xl gold-grad mt-4">$149</p>
+    </div>
+  </div>
+
+  <!-- Merch teaser -->
+  <div class="grid sm:grid-cols-2 gap-6 items-center mt-16 reveal">
+    <div class="card-zoom rounded-2xl overflow-hidden"><img src="images/ad-4-merch.jpg" alt="Mrs. DoubtHire branded fan, tote and bride squad sash" class="w-full aspect-square object-cover"></div>
+    <div>
+      <p class="uppercase tracking-[.35em] text-[var(--teal)] text-xs mb-3">Bride Squad Swag</p>
+      <h3 class="font-display text-5xl">Every Crew Goes Home <span class="neon-pink">Fabulous</span></h3>
+      <p class="text-cream/75 font-light mt-3">Add the gift bundle — branded hand fans, totes & a "Bride Squad" sash for the guest of honor. Snap, snap.</p>
+    </div>
+  </div>
+</section>
+
+<!-- BOOK / CTA -->
+<section id="book" class="relative py-24 sm:py-32 text-center overflow-hidden">
+  <img src="images/vehicle-3-suv-neon.jpg" alt="" class="absolute inset-0 w-full h-full object-cover opacity-30">
+  <div class="absolute inset-0 bg-[var(--ink)]/80"></div>
+  <div class="relative z-10 max-w-2xl mx-auto px-5 reveal">
+    <img src="images/favicon-512.png" alt="Mrs. DoubtHire badge" class="w-20 h-20 mx-auto rounded-full ring-2 ring-[var(--gold)]/70 mb-6">
+    <h2 class="font-display text-6xl sm:text-8xl leading-[.9]"><span class="neon-pink">Hire</span> <span class="neon-teal">The</span> <span class="neon-pink">Mrs.</span></h2>
+    <p class="text-cream/80 mt-4 font-light">Tell us your night — we'll bring the sequins, the seats, and the showstopper.</p>
+    <div class="mt-8 flex flex-col sm:flex-row gap-3 justify-center">
+      <a href="tel:17605553724" class="btn-pink font-semibold uppercase tracking-widest px-7 py-3.5 rounded-full">Call (760) 555-DRAG</a>
+      <a href="https://instagram.com" target="_blank" rel="noopener" class="btn-ghost font-semibold uppercase tracking-widest px-7 py-3.5 rounded-full">@mrsdoubthire</a>
+    </div>
+    <p class="mt-6 text-[var(--gold)] tracking-widest text-sm">MRSDOUBTHIRE.COM</p>
+    <p class="mt-2 text-cream/40 text-xs">Serving Palm Springs · Cathedral City · Rancho Mirage · Palm Desert</p>
+  </div>
+</section>
+
+<div class="checker"></div>
+
+<!-- BRAND FOOTER -->
+<footer class="text-center py-12 px-5">
+  <p class="font-script text-4xl text-[var(--pink-bright)]">Mrs. DoubtHire</p>
+  <p class="text-cream/50 text-xs uppercase tracking-[.3em] mt-2">Palm Springs' Fabulous Drag Taxi</p>
+  <p class="text-cream/30 text-xs mt-4">© 2026 Mrs. DoubtHire · Concept proof of concept</p>
+</footer>
+
+<!-- Banana Bytes credit -->
+<div style="text-align:center; padding:1.5rem 1rem; font-size:0.7rem; letter-spacing:0.05em; opacity:0.45; background:#0B0A0C;">
+  <a href="https://instagram.com/BananaCares" target="_blank" rel="noopener" style="text-decoration:none; color:inherit;">
+    Mockup created by Banana Bytes
+  </a>
+</div>
+
+<script>
+  // sticky nav background on scroll
+  const nav=document.getElementById('nav');
+  const onScroll=()=>{ if(window.scrollY>40){ nav.style.background='rgba(11,10,12,.92)'; nav.style.backdropFilter='blur(10px)'; nav.style.boxShadow='0 1px 0 rgba(255,255,255,.06)'; } else { nav.style.background='transparent'; nav.style.backdropFilter='none'; nav.style.boxShadow='none'; } };
+  window.addEventListener('scroll',onScroll); onScroll();
+
+  // reveal on scroll
+  const io=new IntersectionObserver((entries)=>{ entries.forEach(e=>{ if(e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target);} }); },{threshold:.12});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
